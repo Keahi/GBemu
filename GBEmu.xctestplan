@@ -1,0 +1,39 @@
+{
+  "configurations" : [
+    {
+      "id" : "7C306E99-0B8B-4EE6-B0B5-D1E1796B8DC2",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:GBEmu.xcodeproj",
+      "identifier" : "8B8FB7E129F9F44000D20B2E",
+      "name" : "GBEmu"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:GBEmu.xcodeproj",
+        "identifier" : "8B8FB7F029F9F44100D20B2E",
+        "name" : "GBEmuTests"
+      }
+    },
+    {
+      "enabled" : false,
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:GBEmu.xcodeproj",
+        "identifier" : "8B8FB7FA29F9F44100D20B2E",
+        "name" : "GBEmuUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

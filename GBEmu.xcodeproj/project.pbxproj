@@ -10,9 +10,11 @@
 		8B8FB7E629F9F44000D20B2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB7E529F9F44000D20B2E /* AppDelegate.swift */; };
 		8B8FB7E829F9F44100D20B2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B8FB7E729F9F44100D20B2E /* Assets.xcassets */; };
 		8B8FB7EB29F9F44100D20B2E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8FB7E929F9F44100D20B2E /* MainMenu.xib */; };
-		8B8FB7F629F9F44100D20B2E /* GBEmuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB7F529F9F44100D20B2E /* GBEmuTests.swift */; };
 		8B8FB80029F9F44100D20B2E /* GBEmuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB7FF29F9F44100D20B2E /* GBEmuUITests.swift */; };
 		8B8FB80229F9F44100D20B2E /* GBEmuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB80129F9F44100D20B2E /* GBEmuUITestsLaunchTests.swift */; };
+		8B8FB81029F9F45E00D20B2E /* LR35902Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB80F29F9F45E00D20B2E /* LR35902Instruction.swift */; };
+		8B8FB81229F9F46400D20B2E /* LR35902CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB81129F9F46400D20B2E /* LR35902CPU.swift */; };
+		8B8FB81529F9F49100D20B2E /* LR35902CPUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB81429F9F49100D20B2E /* LR35902CPUTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +41,13 @@
 		8B8FB7EA29F9F44100D20B2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8B8FB7EC29F9F44100D20B2E /* GBEmu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GBEmu.entitlements; sourceTree = "<group>"; };
 		8B8FB7F129F9F44100D20B2E /* GBEmuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBEmuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B8FB7F529F9F44100D20B2E /* GBEmuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBEmuTests.swift; sourceTree = "<group>"; };
 		8B8FB7FB29F9F44100D20B2E /* GBEmuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBEmuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8FB7FF29F9F44100D20B2E /* GBEmuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBEmuUITests.swift; sourceTree = "<group>"; };
 		8B8FB80129F9F44100D20B2E /* GBEmuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBEmuUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8B8FB80F29F9F45E00D20B2E /* LR35902Instruction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LR35902Instruction.swift; sourceTree = "<group>"; };
+		8B8FB81129F9F46400D20B2E /* LR35902CPU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LR35902CPU.swift; sourceTree = "<group>"; };
+		8B8FB81429F9F49100D20B2E /* LR35902CPUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LR35902CPUTests.swift; sourceTree = "<group>"; };
+		8B8FB81629F9F4B800D20B2E /* GBEmu.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = GBEmu.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +78,7 @@
 		8B8FB7D929F9F44000D20B2E = {
 			isa = PBXGroup;
 			children = (
+				8B8FB81629F9F4B800D20B2E /* GBEmu.xctestplan */,
 				8B8FB7E429F9F44000D20B2E /* GBEmu */,
 				8B8FB7F429F9F44100D20B2E /* GBEmuTests */,
 				8B8FB7FE29F9F44100D20B2E /* GBEmuUITests */,
@@ -93,6 +99,7 @@
 		8B8FB7E429F9F44000D20B2E /* GBEmu */ = {
 			isa = PBXGroup;
 			children = (
+				8B8FB80E29F9F44600D20B2E /* CPU */,
 				8B8FB7E529F9F44000D20B2E /* AppDelegate.swift */,
 				8B8FB7E729F9F44100D20B2E /* Assets.xcassets */,
 				8B8FB7E929F9F44100D20B2E /* MainMenu.xib */,
@@ -104,7 +111,7 @@
 		8B8FB7F429F9F44100D20B2E /* GBEmuTests */ = {
 			isa = PBXGroup;
 			children = (
-				8B8FB7F529F9F44100D20B2E /* GBEmuTests.swift */,
+				8B8FB81329F9F47A00D20B2E /* CPU */,
 			);
 			path = GBEmuTests;
 			sourceTree = "<group>";
@@ -116,6 +123,23 @@
 				8B8FB80129F9F44100D20B2E /* GBEmuUITestsLaunchTests.swift */,
 			);
 			path = GBEmuUITests;
+			sourceTree = "<group>";
+		};
+		8B8FB80E29F9F44600D20B2E /* CPU */ = {
+			isa = PBXGroup;
+			children = (
+				8B8FB81129F9F46400D20B2E /* LR35902CPU.swift */,
+				8B8FB80F29F9F45E00D20B2E /* LR35902Instruction.swift */,
+			);
+			path = CPU;
+			sourceTree = "<group>";
+		};
+		8B8FB81329F9F47A00D20B2E /* CPU */ = {
+			isa = PBXGroup;
+			children = (
+				8B8FB81429F9F49100D20B2E /* LR35902CPUTests.swift */,
+			);
+			path = CPU;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +213,7 @@
 					};
 					8B8FB7F029F9F44100D20B2E = {
 						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
 						TestTargetID = 8B8FB7E129F9F44000D20B2E;
 					};
 					8B8FB7FA29F9F44100D20B2E = {
@@ -249,6 +274,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B8FB7E629F9F44000D20B2E /* AppDelegate.swift in Sources */,
+				8B8FB81029F9F45E00D20B2E /* LR35902Instruction.swift in Sources */,
+				8B8FB81229F9F46400D20B2E /* LR35902CPU.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B8FB7F629F9F44100D20B2E /* GBEmuTests.swift in Sources */,
+				8B8FB81529F9F49100D20B2E /* LR35902CPUTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +495,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 45MB6XH5ZR;
@@ -477,6 +505,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.keahi.GBEmuTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GBEmu.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GBEmu";
 			};
@@ -487,6 +516,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 45MB6XH5ZR;
