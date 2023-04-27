@@ -7,27 +7,17 @@
 
 import Foundation
 
-enum LR35902InstructionDecodeFailure: Error {
-    /// Thrown when the provided `Word` does not contain a valid instruction.
-    /// If this is the case, the CPU won't know what to do.
-    case invalidOpcode
-    /// Thrown when the provided `Word` is a prefix for a 16-bit instruction.
-    /// This is not an error in itself, but the caller should then attempt to decode a `DoubleWord` as a `LR35902Instruction16Bit`
-    case requires16BitOpcode
-}
-
 enum LR35902Instruction: Word {
-    static func decode(_ word: Word) -> Result<LR35902Instruction, LR35902InstructionDecodeFailure> {
-        guard let instruction = LR35902Instruction(rawValue: word) else { return .failure(.invalidOpcode) }
-
-        // Per the CPU opcode spec, when an instruction begins with `0xCB`, it is interpreted as a
-        // 16-bit instruction. Those aren't handled here, and must be initialized as an instance of
-        // `LR35902Instruction16Bit`
-        if instruction == .cb_prefix {
-            return .failure(.requires16BitOpcode)
+    init(rawValue: UInt8) throws {
+        guard let instruction = LR35902Instruction(rawValue: rawValue) else {
+            throw LR35902InstructionDecodeFailure.invalidOpcode
         }
 
-        return .success(instruction)
+        if instruction == .cb_prefix {
+            throw LR35902InstructionDecodeFailure.requires16BitOpcode
+        }
+
+        self = instruction
     }
 
     case nop                = 0x00

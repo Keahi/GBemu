@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B35C59529FA0AD3007CB49C /* LR35902InstructionDecodeFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35C59429FA0AD3007CB49C /* LR35902InstructionDecodeFailure.swift */; };
+		8B35C59729FA0AE7007CB49C /* LR35902Instruction16Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35C59629FA0AE7007CB49C /* LR35902Instruction16Bit.swift */; };
+		8B35C59929FA0B1E007CB49C /* LR35902Instruction16BitDecodeFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35C59829FA0B1E007CB49C /* LR35902Instruction16BitDecodeFailure.swift */; };
 		8B8FB7E629F9F44000D20B2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB7E529F9F44000D20B2E /* AppDelegate.swift */; };
 		8B8FB7E829F9F44100D20B2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B8FB7E729F9F44100D20B2E /* Assets.xcassets */; };
 		8B8FB7EB29F9F44100D20B2E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8FB7E929F9F44100D20B2E /* MainMenu.xib */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B35C59429FA0AD3007CB49C /* LR35902InstructionDecodeFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LR35902InstructionDecodeFailure.swift; sourceTree = "<group>"; };
+		8B35C59629FA0AE7007CB49C /* LR35902Instruction16Bit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LR35902Instruction16Bit.swift; sourceTree = "<group>"; };
+		8B35C59829FA0B1E007CB49C /* LR35902Instruction16BitDecodeFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LR35902Instruction16BitDecodeFailure.swift; sourceTree = "<group>"; };
 		8B8FB7E229F9F44000D20B2E /* GBEmu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBEmu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8FB7E529F9F44000D20B2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B8FB7E729F9F44100D20B2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,6 +136,9 @@
 			children = (
 				8B8FB81129F9F46400D20B2E /* LR35902CPU.swift */,
 				8B8FB80F29F9F45E00D20B2E /* LR35902Instruction.swift */,
+				8B35C59429FA0AD3007CB49C /* LR35902InstructionDecodeFailure.swift */,
+				8B35C59629FA0AE7007CB49C /* LR35902Instruction16Bit.swift */,
+				8B35C59829FA0B1E007CB49C /* LR35902Instruction16BitDecodeFailure.swift */,
 			);
 			path = CPU;
 			sourceTree = "<group>";
@@ -275,7 +284,10 @@
 			files = (
 				8B8FB7E629F9F44000D20B2E /* AppDelegate.swift in Sources */,
 				8B8FB81029F9F45E00D20B2E /* LR35902Instruction.swift in Sources */,
+				8B35C59929FA0B1E007CB49C /* LR35902Instruction16BitDecodeFailure.swift in Sources */,
 				8B8FB81229F9F46400D20B2E /* LR35902CPU.swift in Sources */,
+				8B35C59729FA0AE7007CB49C /* LR35902Instruction16Bit.swift in Sources */,
+				8B35C59529FA0AD3007CB49C /* LR35902InstructionDecodeFailure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
