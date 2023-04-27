@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B8FB7E629F9F44000D20B2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB7E529F9F44000D20B2E /* AppDelegate.swift */; };
+		8B8FB7E829F9F44100D20B2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B8FB7E729F9F44100D20B2E /* Assets.xcassets */; };
+		8B8FB7EB29F9F44100D20B2E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8FB7E929F9F44100D20B2E /* MainMenu.xib */; };
+		8B8FB7F629F9F44100D20B2E /* GBEmuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB7F529F9F44100D20B2E /* GBEmuTests.swift */; };
+		8B8FB80029F9F44100D20B2E /* GBEmuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB7FF29F9F44100D20B2E /* GBEmuUITests.swift */; };
+		8B8FB80229F9F44100D20B2E /* GBEmuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB80129F9F44100D20B2E /* GBEmuUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B8FB7F229F9F44100D20B2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B8FB7DA29F9F44000D20B2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B8FB7E129F9F44000D20B2E;
+			remoteInfo = GBEmu;
+		};
+		8B8FB7FC29F9F44100D20B2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B8FB7DA29F9F44000D20B2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B8FB7E129F9F44000D20B2E;
+			remoteInfo = GBEmu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B8FB7E229F9F44000D20B2E /* GBEmu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBEmu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8FB7E529F9F44000D20B2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8B8FB7E729F9F44100D20B2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B8FB7EA29F9F44100D20B2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8B8FB7EC29F9F44100D20B2E /* GBEmu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GBEmu.entitlements; sourceTree = "<group>"; };
+		8B8FB7F129F9F44100D20B2E /* GBEmuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBEmuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8FB7F529F9F44100D20B2E /* GBEmuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBEmuTests.swift; sourceTree = "<group>"; };
+		8B8FB7FB29F9F44100D20B2E /* GBEmuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBEmuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8FB7FF29F9F44100D20B2E /* GBEmuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBEmuUITests.swift; sourceTree = "<group>"; };
+		8B8FB80129F9F44100D20B2E /* GBEmuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBEmuUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B8FB7DF29F9F44000D20B2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B8FB7EE29F9F44100D20B2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B8FB7F829F9F44100D20B2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B8FB7D929F9F44000D20B2E = {
+			isa = PBXGroup;
+			children = (
+				8B8FB7E429F9F44000D20B2E /* GBEmu */,
+				8B8FB7F429F9F44100D20B2E /* GBEmuTests */,
+				8B8FB7FE29F9F44100D20B2E /* GBEmuUITests */,
+				8B8FB7E329F9F44000D20B2E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B8FB7E329F9F44000D20B2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B8FB7E229F9F44000D20B2E /* GBEmu.app */,
+				8B8FB7F129F9F44100D20B2E /* GBEmuTests.xctest */,
+				8B8FB7FB29F9F44100D20B2E /* GBEmuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B8FB7E429F9F44000D20B2E /* GBEmu */ = {
+			isa = PBXGroup;
+			children = (
+				8B8FB7E529F9F44000D20B2E /* AppDelegate.swift */,
+				8B8FB7E729F9F44100D20B2E /* Assets.xcassets */,
+				8B8FB7E929F9F44100D20B2E /* MainMenu.xib */,
+				8B8FB7EC29F9F44100D20B2E /* GBEmu.entitlements */,
+			);
+			path = GBEmu;
+			sourceTree = "<group>";
+		};
+		8B8FB7F429F9F44100D20B2E /* GBEmuTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B8FB7F529F9F44100D20B2E /* GBEmuTests.swift */,
+			);
+			path = GBEmuTests;
+			sourceTree = "<group>";
+		};
+		8B8FB7FE29F9F44100D20B2E /* GBEmuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8B8FB7FF29F9F44100D20B2E /* GBEmuUITests.swift */,
+				8B8FB80129F9F44100D20B2E /* GBEmuUITestsLaunchTests.swift */,
+			);
+			path = GBEmuUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B8FB7E129F9F44000D20B2E /* GBEmu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B8FB80529F9F44100D20B2E /* Build configuration list for PBXNativeTarget "GBEmu" */;
+			buildPhases = (
+				8B8FB7DE29F9F44000D20B2E /* Sources */,
+				8B8FB7DF29F9F44000D20B2E /* Frameworks */,
+				8B8FB7E029F9F44000D20B2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GBEmu;
+			productName = GBEmu;
+			productReference = 8B8FB7E229F9F44000D20B2E /* GBEmu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B8FB7F029F9F44100D20B2E /* GBEmuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B8FB80829F9F44100D20B2E /* Build configuration list for PBXNativeTarget "GBEmuTests" */;
+			buildPhases = (
+				8B8FB7ED29F9F44100D20B2E /* Sources */,
+				8B8FB7EE29F9F44100D20B2E /* Frameworks */,
+				8B8FB7EF29F9F44100D20B2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B8FB7F329F9F44100D20B2E /* PBXTargetDependency */,
+			);
+			name = GBEmuTests;
+			productName = GBEmuTests;
+			productReference = 8B8FB7F129F9F44100D20B2E /* GBEmuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8B8FB7FA29F9F44100D20B2E /* GBEmuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B8FB80B29F9F44100D20B2E /* Build configuration list for PBXNativeTarget "GBEmuUITests" */;
+			buildPhases = (
+				8B8FB7F729F9F44100D20B2E /* Sources */,
+				8B8FB7F829F9F44100D20B2E /* Frameworks */,
+				8B8FB7F929F9F44100D20B2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B8FB7FD29F9F44100D20B2E /* PBXTargetDependency */,
+			);
+			name = GBEmuUITests;
+			productName = GBEmuUITests;
+			productReference = 8B8FB7FB29F9F44100D20B2E /* GBEmuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B8FB7DA29F9F44000D20B2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					8B8FB7E129F9F44000D20B2E = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					8B8FB7F029F9F44100D20B2E = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 8B8FB7E129F9F44000D20B2E;
+					};
+					8B8FB7FA29F9F44100D20B2E = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 8B8FB7E129F9F44000D20B2E;
+					};
+				};
+			};
+			buildConfigurationList = 8B8FB7DD29F9F44000D20B2E /* Build configuration list for PBXProject "GBEmu" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B8FB7D929F9F44000D20B2E;
+			productRefGroup = 8B8FB7E329F9F44000D20B2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B8FB7E129F9F44000D20B2E /* GBEmu */,
+				8B8FB7F029F9F44100D20B2E /* GBEmuTests */,
+				8B8FB7FA29F9F44100D20B2E /* GBEmuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B8FB7E029F9F44000D20B2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B8FB7E829F9F44100D20B2E /* Assets.xcassets in Resources */,
+				8B8FB7EB29F9F44100D20B2E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B8FB7EF29F9F44100D20B2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B8FB7F929F9F44100D20B2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B8FB7DE29F9F44000D20B2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B8FB7E629F9F44000D20B2E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B8FB7ED29F9F44100D20B2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B8FB7F629F9F44100D20B2E /* GBEmuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B8FB7F729F9F44100D20B2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B8FB80029F9F44100D20B2E /* GBEmuUITests.swift in Sources */,
+				8B8FB80229F9F44100D20B2E /* GBEmuUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B8FB7F329F9F44100D20B2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B8FB7E129F9F44000D20B2E /* GBEmu */;
+			targetProxy = 8B8FB7F229F9F44100D20B2E /* PBXContainerItemProxy */;
+		};
+		8B8FB7FD29F9F44100D20B2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B8FB7E129F9F44000D20B2E /* GBEmu */;
+			targetProxy = 8B8FB7FC29F9F44100D20B2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B8FB7E929F9F44100D20B2E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B8FB7EA29F9F44100D20B2E /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B8FB80329F9F44100D20B2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B8FB80429F9F44100D20B2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		8B8FB80629F9F44100D20B2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GBEmu/GBEmu.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 45MB6XH5ZR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.keahi.GBEmu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8B8FB80729F9F44100D20B2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GBEmu/GBEmu.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 45MB6XH5ZR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.keahi.GBEmu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8B8FB80929F9F44100D20B2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 45MB6XH5ZR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.keahi.GBEmuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GBEmu.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GBEmu";
+			};
+			name = Debug;
+		};
+		8B8FB80A29F9F44100D20B2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 45MB6XH5ZR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.keahi.GBEmuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GBEmu.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GBEmu";
+			};
+			name = Release;
+		};
+		8B8FB80C29F9F44100D20B2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 45MB6XH5ZR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.keahi.GBEmuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = GBEmu;
+			};
+			name = Debug;
+		};
+		8B8FB80D29F9F44100D20B2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 45MB6XH5ZR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.keahi.GBEmuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = GBEmu;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B8FB7DD29F9F44000D20B2E /* Build configuration list for PBXProject "GBEmu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B8FB80329F9F44100D20B2E /* Debug */,
+				8B8FB80429F9F44100D20B2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B8FB80529F9F44100D20B2E /* Build configuration list for PBXNativeTarget "GBEmu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B8FB80629F9F44100D20B2E /* Debug */,
+				8B8FB80729F9F44100D20B2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B8FB80829F9F44100D20B2E /* Build configuration list for PBXNativeTarget "GBEmuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B8FB80929F9F44100D20B2E /* Debug */,
+				8B8FB80A29F9F44100D20B2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B8FB80B29F9F44100D20B2E /* Build configuration list for PBXNativeTarget "GBEmuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B8FB80C29F9F44100D20B2E /* Debug */,
+				8B8FB80D29F9F44100D20B2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B8FB7DA29F9F44000D20B2E /* Project object */;
+}
