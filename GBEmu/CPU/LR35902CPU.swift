@@ -14,15 +14,15 @@ class LR35902CPU {
     // MARK: - Registers
 
     /// The accumulator which stores data and arithmetic/logical operations results
-    private(set) var registerA: Word = 0
+    var registerA: Word = 0
 
     // Note these can be addressed as register pair 'BC'
-    private(set) var registerB: Word = 0
-    private(set) var registerC: Word = 0
+    var registerB: Word = 0
+    var registerC: Word = 0
 
     // Note these can be addressed as register pair 'DE'
-    private(set) var registerD: Word = 0
-    private(set) var registerE: Word = 0
+    var registerD: Word = 0
+    var registerE: Word = 0
 
     /// This is a special register which uses bits to track the various flags supported by this CPU.
     /// The bits are arranged as such: `ZSHC0000`.
@@ -31,17 +31,17 @@ class LR35902CPU {
     ///   - H: Half Carry flag
     ///   - C: Carry flag
     /// All other bits are zero.
-    private(set) var registerF: Word = 0
+    var registerF: Word = 0
 
     // Note these can be addressed as register pair 'HL'
-    private(set) var registerH: Word = 0
-    private(set) var registerL: Word = 0
+    var registerH: Word = 0
+    var registerL: Word = 0
 
     /// Holds the address data of the program to be executed next
-    private(set) var programCounter: DoubleWord = 0
+    var programCounter: DoubleWord = 0
 
     /// Holds the starting address of the stack area of memory
-    private(set) var stackPointer: DoubleWord = 0
+    var stackPointer: DoubleWord = 0
 
     // MARK: - Flags
 
@@ -50,7 +50,7 @@ class LR35902CPU {
     private static let flagBitmaskHalfCarry: Word = 0b0010_0000
     private static let flagBitmaskCarry: Word = 0b0001_0000
 
-    private var flagZero: Bool {
+    var flagZero: Bool {
         get {
             (registerF & Self.flagBitmaskZero) != 0
         }
@@ -63,7 +63,7 @@ class LR35902CPU {
         }
     }
 
-    private var flagSubtraction: Bool {
+    var flagSubtraction: Bool {
         get {
             (registerF & Self.flagBitmaskSubtraction) != 0
         }
@@ -76,7 +76,7 @@ class LR35902CPU {
         }
     }
 
-    private var flagHalfCarry: Bool {
+    var flagHalfCarry: Bool {
         get {
             (registerF & Self.flagBitmaskHalfCarry) != 0
         }
@@ -89,7 +89,7 @@ class LR35902CPU {
         }
     }
 
-    private var flagCarry: Bool {
+    var flagCarry: Bool {
         get {
             (registerF & Self.flagBitmaskCarry) != 0
         }
@@ -99,17 +99,6 @@ class LR35902CPU {
             } else {
                 registerF = (registerF ^ Self.flagBitmaskCarry)
             }
-        }
-    }
-
-    // MARK: - Execution
-
-    func evaluate(_ instruction: LR35902Instruction) {
-        switch instruction {
-            case .cpl:
-                registerA = ~registerA
-            default:
-                break
         }
     }
 

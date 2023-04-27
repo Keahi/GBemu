@@ -9,10 +9,10 @@
 import XCTest
 
 final class LR35902CPUTests: XCTestCase {
-    func testInstruction_cpl() {
+    func testInstruction_cpl() throws {
         let cpu = LR35902CPU()
         cpu.setRegisters(a: 0b10101010)
-        cpu.evaluate(.cpl)
+        try cpu.evaluate(.cpl)
         XCTAssertEqual(cpu.registerA, 0b01010101)
     }
 }
