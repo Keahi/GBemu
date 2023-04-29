@@ -50,6 +50,8 @@ class LR35902CPU {
     private static let flagBitmaskHalfCarry: Word = 0b0010_0000
     private static let flagBitmaskCarry: Word = 0b0001_0000
 
+    /// In the official GameBoy programming manual, this is reffered to as `Z`
+    /// This is set to `true`… "when the result of an operation is `0`; otherwise reset."
     var flagZero: Bool {
         get {
             (registerF & Self.flagBitmaskZero) != 0
@@ -63,6 +65,8 @@ class LR35902CPU {
         }
     }
 
+    /// In the official GameBoy programming manual, this is referred to as `N`.
+    /// This is set to `true`… "following execution of the substruction instruction, regardless of the result."
     var flagSubtraction: Bool {
         get {
             (registerF & Self.flagBitmaskSubtraction) != 0
@@ -76,6 +80,8 @@ class LR35902CPU {
         }
     }
 
+    /// In the official GameBoy programming manual, this is referred to as `H`.
+    /// This is set to `true`… "when an operation results in carrying from or borrowing to bit 3."
     var flagHalfCarry: Bool {
         get {
             (registerF & Self.flagBitmaskHalfCarry) != 0
@@ -89,6 +95,8 @@ class LR35902CPU {
         }
     }
 
+    /// In the official GameBoy programming manual, this is referred to as `CY`.
+    /// This is set to `true`… "when an operation results in carrying from or borrowing to bit 7."
     var flagCarry: Bool {
         get {
             (registerF & Self.flagBitmaskCarry) != 0
