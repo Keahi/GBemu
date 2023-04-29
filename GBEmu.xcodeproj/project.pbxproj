@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8B35C59529FA0AD3007CB49C /* LR35902InstructionDecodeFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35C59429FA0AD3007CB49C /* LR35902InstructionDecodeFailure.swift */; };
-		8B35C59729FA0AE7007CB49C /* LR35902Instruction16Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35C59629FA0AE7007CB49C /* LR35902Instruction16Bit.swift */; };
+		8B35C59729FA0AE7007CB49C /* CPUInstruction16Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35C59629FA0AE7007CB49C /* CPUInstruction16Bit.swift */; };
 		8B35C59929FA0B1E007CB49C /* LR35902Instruction16BitDecodeFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35C59829FA0B1E007CB49C /* LR35902Instruction16BitDecodeFailure.swift */; };
 		8B35C59D29FA9D91007CB49C /* CPU+Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35C59C29FA9D91007CB49C /* CPU+Control.swift */; };
 		8B35C59F29FA9E62007CB49C /* CPUInstructionEvaluationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35C59E29FA9E62007CB49C /* CPUInstructionEvaluationResult.swift */; };
@@ -19,7 +19,7 @@
 		8B8FB7EB29F9F44100D20B2E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8FB7E929F9F44100D20B2E /* MainMenu.xib */; };
 		8B8FB80029F9F44100D20B2E /* GBEmuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB7FF29F9F44100D20B2E /* GBEmuUITests.swift */; };
 		8B8FB80229F9F44100D20B2E /* GBEmuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB80129F9F44100D20B2E /* GBEmuUITestsLaunchTests.swift */; };
-		8B8FB81029F9F45E00D20B2E /* LR35902Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB80F29F9F45E00D20B2E /* LR35902Instruction.swift */; };
+		8B8FB81029F9F45E00D20B2E /* CPUInstruction8Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB80F29F9F45E00D20B2E /* CPUInstruction8Bit.swift */; };
 		8B8FB81229F9F46400D20B2E /* CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB81129F9F46400D20B2E /* CPU.swift */; };
 		8B8FB81529F9F49100D20B2E /* LR35902CPU8BitArithmeticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB81429F9F49100D20B2E /* LR35902CPU8BitArithmeticTests.swift */; };
 		8BAB721729FD4D9000223702 /* CPU+8BitArithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAB721629FD4D9000223702 /* CPU+8BitArithmetic.swift */; };
@@ -47,7 +47,7 @@
 
 /* Begin PBXFileReference section */
 		8B35C59429FA0AD3007CB49C /* LR35902InstructionDecodeFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LR35902InstructionDecodeFailure.swift; sourceTree = "<group>"; };
-		8B35C59629FA0AE7007CB49C /* LR35902Instruction16Bit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LR35902Instruction16Bit.swift; sourceTree = "<group>"; };
+		8B35C59629FA0AE7007CB49C /* CPUInstruction16Bit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUInstruction16Bit.swift; sourceTree = "<group>"; };
 		8B35C59829FA0B1E007CB49C /* LR35902Instruction16BitDecodeFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LR35902Instruction16BitDecodeFailure.swift; sourceTree = "<group>"; };
 		8B35C59C29FA9D91007CB49C /* CPU+Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CPU+Control.swift"; sourceTree = "<group>"; };
 		8B35C59E29FA9E62007CB49C /* CPUInstructionEvaluationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUInstructionEvaluationResult.swift; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		8B8FB7FB29F9F44100D20B2E /* GBEmuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBEmuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8FB7FF29F9F44100D20B2E /* GBEmuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBEmuUITests.swift; sourceTree = "<group>"; };
 		8B8FB80129F9F44100D20B2E /* GBEmuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBEmuUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		8B8FB80F29F9F45E00D20B2E /* LR35902Instruction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LR35902Instruction.swift; sourceTree = "<group>"; };
+		8B8FB80F29F9F45E00D20B2E /* CPUInstruction8Bit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPUInstruction8Bit.swift; sourceTree = "<group>"; };
 		8B8FB81129F9F46400D20B2E /* CPU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPU.swift; sourceTree = "<group>"; };
 		8B8FB81429F9F49100D20B2E /* LR35902CPU8BitArithmeticTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LR35902CPU8BitArithmeticTests.swift; sourceTree = "<group>"; };
 		8B8FB81629F9F4B800D20B2E /* GBEmu.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = GBEmu.xctestplan; sourceTree = "<group>"; };
@@ -100,9 +100,9 @@
 		8B35C59A29FA9D52007CB49C /* Instruction Set */ = {
 			isa = PBXGroup;
 			children = (
-				8B8FB80F29F9F45E00D20B2E /* LR35902Instruction.swift */,
+				8B8FB80F29F9F45E00D20B2E /* CPUInstruction8Bit.swift */,
 				8B35C59429FA0AD3007CB49C /* LR35902InstructionDecodeFailure.swift */,
-				8B35C59629FA0AE7007CB49C /* LR35902Instruction16Bit.swift */,
+				8B35C59629FA0AE7007CB49C /* CPUInstruction16Bit.swift */,
 				8B35C59829FA0B1E007CB49C /* LR35902Instruction16BitDecodeFailure.swift */,
 			);
 			path = "Instruction Set";
@@ -333,7 +333,7 @@
 				8B35C5A129FA9EF1007CB49C /* CPUError.swift in Sources */,
 				8B8FB7E629F9F44000D20B2E /* AppDelegate.swift in Sources */,
 				8B35C5A329FA9F92007CB49C /* CPU+Evaluate.swift in Sources */,
-				8B8FB81029F9F45E00D20B2E /* LR35902Instruction.swift in Sources */,
+				8B8FB81029F9F45E00D20B2E /* CPUInstruction8Bit.swift in Sources */,
 				8B35C59929FA0B1E007CB49C /* LR35902Instruction16BitDecodeFailure.swift in Sources */,
 				8B35C59F29FA9E62007CB49C /* CPUInstructionEvaluationResult.swift in Sources */,
 				8B35C59D29FA9D91007CB49C /* CPU+Control.swift in Sources */,
@@ -342,7 +342,7 @@
 				8BAB721C29FD5CED00223702 /* LR35902WordAddition.swift in Sources */,
 				8BAB721929FD5A9300223702 /* FlagResult.swift in Sources */,
 				8B8FB81229F9F46400D20B2E /* CPU.swift in Sources */,
-				8B35C59729FA0AE7007CB49C /* LR35902Instruction16Bit.swift in Sources */,
+				8B35C59729FA0AE7007CB49C /* CPUInstruction16Bit.swift in Sources */,
 				8B35C59529FA0AD3007CB49C /* LR35902InstructionDecodeFailure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

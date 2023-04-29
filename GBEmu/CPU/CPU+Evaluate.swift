@@ -9,7 +9,7 @@ import Foundation
 
 extension CPU {
     /// Evaluates an instruction from an 8-bit opcode
-    func evaluate(_ instruction: LR35902Instruction) throws {
+    func evaluate(_ instruction: CPUInstruction8Bit) throws {
         switch instruction {
             case .nop:
                 try nop()
@@ -505,7 +505,7 @@ extension CPU {
     }
 
     /// Evaluates an instruction from a 16-bit opcode
-    func evaluate(_ instruction: LR35902Instruction16Bit) throws {
+    func evaluate(_ instruction: CPUInstruction16Bit) throws {
         switch instruction {
             case .rlc_B:
                 throw CPUError.instructionNotImplemented

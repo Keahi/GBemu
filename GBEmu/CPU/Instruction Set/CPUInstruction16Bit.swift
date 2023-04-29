@@ -7,7 +7,15 @@
 
 import Foundation
 
-enum LR35902Instruction16Bit: DoubleWord {
+enum CPUInstruction16Bit: DoubleWord {
+    init(rawValue: UInt16) throws {
+        guard let instruction = CPUInstruction16Bit(rawValue: rawValue) else {
+            throw LR35902Instruction16BitDecodeFailure.invalidOpcode
+        }
+
+        self = instruction
+    }
+
     case rlc_B          = 0xCB00
     case rlc_C          = 0xCB01
     case rlc_D          = 0xCB02

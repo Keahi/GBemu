@@ -1,5 +1,5 @@
 //
-//  LR35902Instruction.swift
+//  CPUInstruction.swift
 //  GBEmu
 //
 //  Created by Jacob Ertell on 4/26/23.
@@ -7,9 +7,9 @@
 
 import Foundation
 
-enum LR35902Instruction: Word {
+enum CPUInstruction8Bit: Word {
     init(rawValue: UInt8) throws {
-        guard let instruction = LR35902Instruction(rawValue: rawValue) else {
+        guard let instruction = CPUInstruction8Bit(rawValue: rawValue) else {
             throw LR35902InstructionDecodeFailure.invalidOpcode
         }
 
