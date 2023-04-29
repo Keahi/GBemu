@@ -1,5 +1,5 @@
 //
-//  LR35902InstructionDecodeFailure.swift
+//  CPUInstruction8BitDecodeError.swift
 //  GBEmu
 //
 //  Created by Jacob Ertell on 4/26/23.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum LR35902InstructionDecodeFailure: Error {
+enum CPUInstruction8BitDecodeError: Error {
     /// Thrown when the provided `Word` does not contain a valid instruction.
     /// If this is the case, the CPU won't know what to do.
     case invalidOpcode

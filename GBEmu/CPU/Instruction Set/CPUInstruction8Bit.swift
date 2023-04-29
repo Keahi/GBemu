@@ -10,11 +10,11 @@ import Foundation
 enum CPUInstruction8Bit: Word {
     init(rawValue: UInt8) throws {
         guard let instruction = CPUInstruction8Bit(rawValue: rawValue) else {
-            throw LR35902InstructionDecodeFailure.invalidOpcode
+            throw CPUInstruction8BitDecodeError.invalidOpcode
         }
 
         if instruction == .cb_prefix {
-            throw LR35902InstructionDecodeFailure.requires16BitOpcode
+            throw CPUInstruction8BitDecodeError.requires16BitOpcode
         }
 
         self = instruction

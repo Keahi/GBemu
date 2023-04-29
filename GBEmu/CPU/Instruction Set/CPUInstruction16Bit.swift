@@ -10,7 +10,7 @@ import Foundation
 enum CPUInstruction16Bit: DoubleWord {
     init(rawValue: UInt16) throws {
         guard let instruction = CPUInstruction16Bit(rawValue: rawValue) else {
-            throw LR35902Instruction16BitDecodeFailure.invalidOpcode
+            throw CPUInstruction16BitDecodeFailure.invalidOpcode
         }
 
         self = instruction
