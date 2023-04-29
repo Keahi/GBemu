@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension LR35902CPU {
+extension CPU {
     func evaluate(_ instruction: LR35902Instruction) throws {
         switch instruction {
             case .nop:

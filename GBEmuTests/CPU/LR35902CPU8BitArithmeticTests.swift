@@ -11,7 +11,7 @@ import XCTest
 final class LR35902CPU8BitArithmeticTests: XCTestCase {
     // MARK: 0x04 INC B
     func testInstruction_inc_B() throws {
-        var cpu = LR35902CPU()
+        var cpu = CPU()
 
         // Test from 0x00
         // Expected outcome is B == 0x01
@@ -25,7 +25,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
         // Test from 0xFF
         // Expected outcome is B == 0x00. The carry and half carry flags will be set.
-        cpu = LR35902CPU()
+        cpu = CPU()
         cpu.setRegisters(b: 0xFF)
         try cpu.evaluate(.inc_B)
         XCTAssertEqual(cpu.registerB, 0x00)
@@ -36,7 +36,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
         // Test from 0x3C
         // Expected outcome is B == 0x3D. The half carry flag will be set.
-        cpu = LR35902CPU()
+        cpu = CPU()
         cpu.setRegisters(b: 0x3C)
         try cpu.evaluate(.inc_B)
         XCTAssertEqual(cpu.registerB, 0x3D)
@@ -47,7 +47,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
         // Test from 0x00 with subtraction flag set
         // Expected outcome is B == 0x01. The subtraction flag will be set to false.
-        cpu = LR35902CPU()
+        cpu = CPU()
         cpu.setRegisters(b: 0x3C)
         cpu.flagSubtraction = true
         try cpu.evaluate(.inc_B)
@@ -65,7 +65,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
     // MARK: 0x0C INC C
     func testInstruction_inc_C() throws {
-        var cpu = LR35902CPU()
+        var cpu = CPU()
 
         // Test from 0x00
         // Expected outcome is C == 0x01
@@ -79,7 +79,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
         // Test from 0xFF
         // Expected outcome is C == 0x00. The carry and half carry flags will be set.
-        cpu = LR35902CPU()
+        cpu = CPU()
         cpu.setRegisters(c: 0xFF)
         try cpu.evaluate(.inc_C)
         XCTAssertEqual(cpu.registerC, 0x00)
@@ -90,7 +90,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
         // Test from 0x3C
         // Expected outcome is C == 0x3D. The half carry flag will be set.
-        cpu = LR35902CPU()
+        cpu = CPU()
         cpu.setRegisters(c: 0x3C)
         try cpu.evaluate(.inc_C)
         XCTAssertEqual(cpu.registerC, 0x3D)
@@ -101,7 +101,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
         // Test from 0x00 with subtraction flag set
         // Expected outcome is C == 0x01. The subtraction flag will be set to false.
-        cpu = LR35902CPU()
+        cpu = CPU()
         cpu.setRegisters(c: 0x3C)
         cpu.flagSubtraction = true
         try cpu.evaluate(.inc_C)
@@ -114,7 +114,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
     // MARK: 0x14 INC D
     func testInstruction_inc_D() throws {
-        var cpu = LR35902CPU()
+        var cpu = CPU()
 
         // Test from 0x00
         // Expected outcome is D == 0x01
@@ -128,7 +128,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
         // Test from 0xFF
         // Expected outcome is D == 0x00. The carry and half carry flags will be set.
-        cpu = LR35902CPU()
+        cpu = CPU()
         cpu.setRegisters(d: 0xFF)
         try cpu.evaluate(.inc_D)
         XCTAssertEqual(cpu.registerD, 0x00)
@@ -139,7 +139,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
         // Test from 0x3C
         // Expected outcome is D == 0x3D. The half carry flag will be set.
-        cpu = LR35902CPU()
+        cpu = CPU()
         cpu.setRegisters(d: 0x3C)
         try cpu.evaluate(.inc_D)
         XCTAssertEqual(cpu.registerD, 0x3D)
@@ -150,7 +150,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
         // Test from 0x00 with subtraction flag set
         // Expected outcome is D == 0x01. The subtraction flag will be set to false.
-        cpu = LR35902CPU()
+        cpu = CPU()
         cpu.setRegisters(d: 0x3C)
         cpu.flagSubtraction = true
         try cpu.evaluate(.inc_D)
@@ -163,7 +163,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
     // MARK: 0x1C INC E
     func testInstruction_inc_E() throws {
-        var cpu = LR35902CPU()
+        var cpu = CPU()
 
         // Test from 0x00
         // Expected outcome is E == 0x01
@@ -177,7 +177,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
         // Test from 0xFF
         // Expected outcome is E == 0x00. The carry and half carry flags will be set.
-        cpu = LR35902CPU()
+        cpu = CPU()
         cpu.setRegisters(e: 0xFF)
         try cpu.evaluate(.inc_E)
         XCTAssertEqual(cpu.registerE, 0x00)
@@ -188,7 +188,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
         // Test from 0x3C
         // Expected outcome is E == 0x3D. The half carry flag will be set.
-        cpu = LR35902CPU()
+        cpu = CPU()
         cpu.setRegisters(e: 0x3C)
         try cpu.evaluate(.inc_E)
         XCTAssertEqual(cpu.registerE, 0x3D)
@@ -199,7 +199,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
         // Test from 0x00 with subtraction flag set
         // Expected outcome is E == 0x01. The subtraction flag will be set to false.
-        cpu = LR35902CPU()
+        cpu = CPU()
         cpu.setRegisters(e: 0x3C)
         cpu.flagSubtraction = true
         try cpu.evaluate(.inc_E)
@@ -212,7 +212,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
     // MARK: 0x24 INC H
     func testInstruction_inc_H() throws {
-        var cpu = LR35902CPU()
+        var cpu = CPU()
 
         // Test from 0x00
         // Expected outcome is H == 0x01
@@ -226,7 +226,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
         // Test from 0xFF
         // Expected outcome is H == 0x00. The carry and half carry flags will be set.
-        cpu = LR35902CPU()
+        cpu = CPU()
         cpu.setRegisters(h: 0xFF)
         try cpu.evaluate(.inc_H)
         XCTAssertEqual(cpu.registerH, 0x00)
@@ -237,7 +237,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
         // Test from 0x3C
         // Expected outcome is H == 0x3D. The half carry flag will be set.
-        cpu = LR35902CPU()
+        cpu = CPU()
         cpu.setRegisters(h: 0x3C)
         try cpu.evaluate(.inc_H)
         XCTAssertEqual(cpu.registerH, 0x3D)
@@ -248,7 +248,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
         // Test from 0x00 with subtraction flag set
         // Expected outcome is H == 0x01. The subtraction flag will be set to false.
-        cpu = LR35902CPU()
+        cpu = CPU()
         cpu.setRegisters(h: 0x3C)
         cpu.flagSubtraction = true
         try cpu.evaluate(.inc_H)
@@ -261,7 +261,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
     // MARK: 0x2C INC L
     func testInstruction_inc_L() throws {
-        var cpu = LR35902CPU()
+        var cpu = CPU()
 
         // Test from 0x00
         // Expected outcome is L == 0x01
@@ -275,7 +275,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
         // Test from 0xFF
         // Expected outcome is L == 0x00. The carry and half carry flags will be set.
-        cpu = LR35902CPU()
+        cpu = CPU()
         cpu.setRegisters(l: 0xFF)
         try cpu.evaluate(.inc_L)
         XCTAssertEqual(cpu.registerL, 0x00)
@@ -286,7 +286,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
         // Test from 0x3C
         // Expected outcome is L == 0x3D. The half carry flag will be set.
-        cpu = LR35902CPU()
+        cpu = CPU()
         cpu.setRegisters(l: 0x3C)
         try cpu.evaluate(.inc_L)
         XCTAssertEqual(cpu.registerL, 0x3D)
@@ -297,7 +297,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
         // Test from 0x00 with subtraction flag set
         // Expected outcome is L == 0x01. The subtraction flag will be set to false.
-        cpu = LR35902CPU()
+        cpu = CPU()
         cpu.setRegisters(l: 0x3C)
         cpu.flagSubtraction = true
         try cpu.evaluate(.inc_L)
@@ -310,7 +310,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
     // MARK: 0x3C INC A
     func testInstruction_inc_A() throws {
-        var cpu = LR35902CPU()
+        var cpu = CPU()
 
         // Test from 0x00
         // Expected outcome is A == 0x01
@@ -324,7 +324,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
         // Test from 0xFF
         // Expected outcome is A == 0x00. The carry and half carry flags will be set.
-        cpu = LR35902CPU()
+        cpu = CPU()
         cpu.setRegisters(a: 0xFF)
         try cpu.evaluate(.inc_A)
         XCTAssertEqual(cpu.registerA, 0x00)
@@ -335,7 +335,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
         // Test from 0x3C
         // Expected outcome is A == 0x3D. The half carry flag will be set.
-        cpu = LR35902CPU()
+        cpu = CPU()
         cpu.setRegisters(a: 0x3C)
         try cpu.evaluate(.inc_A)
         XCTAssertEqual(cpu.registerA, 0x3D)
@@ -346,7 +346,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
         // Test from 0x00 with subtraction flag set
         // Expected outcome is A == 0x01. The subtraction flag will be set to false.
-        cpu = LR35902CPU()
+        cpu = CPU()
         cpu.setRegisters(a: 0x3C)
         cpu.flagSubtraction = true
         try cpu.evaluate(.inc_A)
@@ -359,7 +359,7 @@ final class LR35902CPU8BitArithmeticTests: XCTestCase {
 
     // MARK: - 0x2F CPL
     func testInstruction_cpl() throws {
-        let cpu = LR35902CPU()
+        let cpu = CPU()
         cpu.setRegisters(a: 0b10101010)
         try cpu.evaluate(.cpl)
         XCTAssertEqual(cpu.registerA, 0b01010101)

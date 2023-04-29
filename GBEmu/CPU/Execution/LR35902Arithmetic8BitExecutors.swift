@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension LR35902CPU {
+extension CPU {
     /// 0x04 INC B
     @discardableResult
     func inc_B() throws -> LR35902ExecutionResult {
@@ -51,7 +51,7 @@ extension LR35902CPU {
     }
 }
 
-private extension LR35902CPU {
+private extension CPU {
     func add(_ number: Word, to registerValue: Word) -> RegisterArithmeticResult {
         fatalError("Not implemented")
     }

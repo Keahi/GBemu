@@ -9,7 +9,7 @@ import Foundation
 
 /// https://meganesu.github.io/generate-gb-opcodes/
 /// This file can be searched by using "Find" with the text `0xFF`, where `0xFF` is the hexadecimal value of the opcode in question.
-extension LR35902CPU {
+extension CPU {
     /// 0x00
     @discardableResult
     func nop() throws -> LR35902ExecutionResult {
