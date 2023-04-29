@@ -9,12 +9,16 @@
     }
   ],
   "defaultOptions" : {
-    "codeCoverage" : false,
+    "addressSanitizer" : {
+      "detectStackUseAfterReturn" : true,
+      "enabled" : true
+    },
     "targetForVariableExpansion" : {
       "containerPath" : "container:GBEmu.xcodeproj",
       "identifier" : "8B8FB7E129F9F44000D20B2E",
       "name" : "GBEmu"
-    }
+    },
+    "undefinedBehaviorSanitizerEnabled" : true
   },
   "testTargets" : [
     {

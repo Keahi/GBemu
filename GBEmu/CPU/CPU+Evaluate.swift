@@ -20,7 +20,7 @@ extension CPU {
             case .inc_BC:
                 throw CPUError.instructionNotImplemented
             case .inc_B:
-                throw CPUError.instructionNotImplemented
+                try inc_B()
             case .dec_B:
                 throw CPUError.instructionNotImplemented
             case .ld_B_d8:
@@ -36,7 +36,7 @@ extension CPU {
             case .dec_BC:
                 throw CPUError.instructionNotImplemented
             case .inc_C:
-                throw CPUError.instructionNotImplemented
+                try inc_C()
             case .dec_C:
                 throw CPUError.instructionNotImplemented
             case .ld_C_d8:
@@ -52,7 +52,7 @@ extension CPU {
             case .inc_DE:
                 throw CPUError.instructionNotImplemented
             case .inc_D:
-                throw CPUError.instructionNotImplemented
+                try inc_D()
             case .dec_D:
                 throw CPUError.instructionNotImplemented
             case .ld_D_d8:
@@ -68,7 +68,7 @@ extension CPU {
             case .dec_DE:
                 throw CPUError.instructionNotImplemented
             case .inc_E:
-                throw CPUError.instructionNotImplemented
+                try inc_E()
             case .dec_E:
                 throw CPUError.instructionNotImplemented
             case .ld_E_d8:
@@ -84,7 +84,7 @@ extension CPU {
             case .inc_HL:
                 throw CPUError.instructionNotImplemented
             case .inc_H:
-                throw CPUError.instructionNotImplemented
+                try inc_H()
             case .dec_H:
                 throw CPUError.instructionNotImplemented
             case .ld_H_d8:
@@ -100,7 +100,7 @@ extension CPU {
             case .dec_HL:
                 throw CPUError.instructionNotImplemented
             case .inc_L:
-                throw CPUError.instructionNotImplemented
+                try inc_L()
             case .dec_L:
                 throw CPUError.instructionNotImplemented
             case .ld_L_d8:
@@ -132,7 +132,7 @@ extension CPU {
             case .dec_SP:
                 throw CPUError.instructionNotImplemented
             case .inc_A:
-                throw CPUError.instructionNotImplemented
+                try inc_A()
             case .dec_A:
                 throw CPUError.instructionNotImplemented
             case .ld_A_d8:

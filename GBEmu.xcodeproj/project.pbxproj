@@ -14,6 +14,7 @@
 		8B35C59F29FA9E62007CB49C /* CPUInstructionEvaluationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35C59E29FA9E62007CB49C /* CPUInstructionEvaluationResult.swift */; };
 		8B35C5A129FA9EF1007CB49C /* CPUError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35C5A029FA9EF1007CB49C /* CPUError.swift */; };
 		8B35C5A329FA9F92007CB49C /* CPU+Evaluate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35C5A229FA9F92007CB49C /* CPU+Evaluate.swift */; };
+		8B8AE5BC29FDB3C0009137F1 /* FlagResult+Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8AE5BB29FDB3C0009137F1 /* FlagResult+Bool.swift */; };
 		8B8FB7E629F9F44000D20B2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB7E529F9F44000D20B2E /* AppDelegate.swift */; };
 		8B8FB7E829F9F44100D20B2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B8FB7E729F9F44100D20B2E /* Assets.xcassets */; };
 		8B8FB7EB29F9F44100D20B2E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8FB7E929F9F44100D20B2E /* MainMenu.xib */; };
@@ -57,6 +58,7 @@
 		8B35C59E29FA9E62007CB49C /* CPUInstructionEvaluationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUInstructionEvaluationResult.swift; sourceTree = "<group>"; };
 		8B35C5A029FA9EF1007CB49C /* CPUError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUError.swift; sourceTree = "<group>"; };
 		8B35C5A229FA9F92007CB49C /* CPU+Evaluate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CPU+Evaluate.swift"; sourceTree = "<group>"; };
+		8B8AE5BB29FDB3C0009137F1 /* FlagResult+Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlagResult+Bool.swift"; sourceTree = "<group>"; };
 		8B8FB7E229F9F44000D20B2E /* GBEmu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBEmu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8FB7E529F9F44000D20B2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B8FB7E729F9F44100D20B2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				8BAB721829FD5A9300223702 /* FlagResult.swift */,
+				8B8AE5BB29FDB3C0009137F1 /* FlagResult+Bool.swift */,
 				8BAB721F29FD607C00223702 /* Word */,
 				8BAB722229FD609D00223702 /* DoubleWord */,
 			);
@@ -384,6 +387,7 @@
 				8B35C59F29FA9E62007CB49C /* CPUInstructionEvaluationResult.swift in Sources */,
 				8B35C59D29FA9D91007CB49C /* CPU+Control.swift in Sources */,
 				8BAB721E29FD5D1200223702 /* WordArithmeticResult.swift in Sources */,
+				8B8AE5BC29FDB3C0009137F1 /* FlagResult+Bool.swift in Sources */,
 				8BAB721729FD4D9000223702 /* CPU+8BitArithmetic.swift in Sources */,
 				8BAB721C29FD5CED00223702 /* Word+Addition.swift in Sources */,
 				8BAB721929FD5A9300223702 /* FlagResult.swift in Sources */,

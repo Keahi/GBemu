@@ -13,10 +13,8 @@ extension Word {
 
         /// Set if the result is `0`; otherwise reset
         let didZero: Bool
-
         /// Set if there is a carry from bit 3; otherwise reset
         let didHalfCarry: Bool
-
         /// Set if there is a carry from bit 7; otherwise reset
         let didCarry: Bool
     }

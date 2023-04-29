@@ -11,7 +11,8 @@ extension CPU {
     /// 0x04 INC B
     @discardableResult
     func inc_B() throws -> CPUInstructionEvaluationResult {
-        throw CPUError.instructionNotImplemented
+        add(1, to: &registerB)
+        return CPUInstructionEvaluationResult(cycleCount: 1)
     }
 
     /// 0x0C INC C
@@ -52,7 +53,25 @@ extension CPU {
 }
 
 private extension CPU {
+    func add(_ number: Word, to register: inout Word) {
+        let arithmeticResult = add(number, to: register)
+
+        register = arithmeticResult.newRegisterValue
+        flagZero = arithmeticResult.zeroFlagResult.flagValue(existingValue: flagZero)
+        flagSubtraction = arithmeticResult.subtractionFlagResult.flagValue(existingValue: flagSubtraction)
+        flagCarry = arithmeticResult.carryFlagResult.flagValue(existingValue: flagCarry)
+        flagHalfCarry = arithmeticResult.halfCarryFlagResult.flagValue(existingValue: flagHalfCarry)
+    }
+
     func add(_ number: Word, to registerValue: Word) -> WordArithmeticResult {
-        fatalError("Not implemented")
+        let result = registerValue.safeAdd(number)
+
+        return WordArithmeticResult(
+            result.value,
+            zero: result.didZero.flagResultValue,
+            subtraction: .clear,
+            halfCarry: result.didHalfCarry.flagResultValue,
+            carry: result.didCarry.flagResultValue
+        )
     }
 }
