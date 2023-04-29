@@ -1,5 +1,5 @@
 //
-//  LR35902CPU.swift
+//  CPU.swift
 //  GBEmu
 //
 //  Created by Jacob Ertell on 4/26/23.
@@ -7,10 +7,7 @@
 
 import Foundation
 
-typealias Word = UInt8
-typealias DoubleWord = UInt16
-
-class LR35902CPU {
+class CPU {
     // MARK: - Registers
 
     /// The accumulator which stores data and arithmetic/logical operations results

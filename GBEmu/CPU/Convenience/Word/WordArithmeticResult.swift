@@ -1,5 +1,5 @@
 //
-//  LR35902RegisterArithmeticResult.swift
+//  WordArithmeticResult.swift
 //  GBEmu
 //
 //  Created by Jacob Ertell on 4/29/23.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RegisterArithmeticResult {
+struct WordArithmeticResult {
     let newRegisterValue: Word
 
     /// Denoted `Z` in the GameBoy programming manual
