@@ -52,7 +52,7 @@ extension CPU {
 }
 
 private extension CPU {
-    func add(_ number: Word, to registerValue: Word) -> RegisterArithmeticResult {
+    func add(_ number: Word, to registerValue: Word) -> WordArithmeticResult {
         fatalError("Not implemented")
     }
 }
