@@ -7,9 +7,6 @@
 
 import Foundation
 
-typealias Word = UInt8
-typealias DoubleWord = UInt16
-
 class CPU {
     // MARK: - Registers
 

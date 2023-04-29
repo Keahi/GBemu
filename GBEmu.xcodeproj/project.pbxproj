@@ -24,8 +24,10 @@
 		8B8FB81529F9F49100D20B2E /* LR35902CPU8BitArithmeticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB81429F9F49100D20B2E /* LR35902CPU8BitArithmeticTests.swift */; };
 		8BAB721729FD4D9000223702 /* CPU+8BitArithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAB721629FD4D9000223702 /* CPU+8BitArithmetic.swift */; };
 		8BAB721929FD5A9300223702 /* FlagResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAB721829FD5A9300223702 /* FlagResult.swift */; };
-		8BAB721C29FD5CED00223702 /* LR35902WordAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAB721B29FD5CED00223702 /* LR35902WordAddition.swift */; };
-		8BAB721E29FD5D1200223702 /* LR35902RegisterArithmeticResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAB721D29FD5D1200223702 /* LR35902RegisterArithmeticResult.swift */; };
+		8BAB721C29FD5CED00223702 /* Word+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAB721B29FD5CED00223702 /* Word+Addition.swift */; };
+		8BAB721E29FD5D1200223702 /* WordArithmeticResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAB721D29FD5D1200223702 /* WordArithmeticResult.swift */; };
+		8BAB722129FD608800223702 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAB722029FD608800223702 /* Word.swift */; };
+		8BAB722429FD60AC00223702 /* DoubleWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAB722329FD60AC00223702 /* DoubleWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,8 +70,10 @@
 		8B8FB81629F9F4B800D20B2E /* GBEmu.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = GBEmu.xctestplan; sourceTree = "<group>"; };
 		8BAB721629FD4D9000223702 /* CPU+8BitArithmetic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CPU+8BitArithmetic.swift"; sourceTree = "<group>"; };
 		8BAB721829FD5A9300223702 /* FlagResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagResult.swift; sourceTree = "<group>"; };
-		8BAB721B29FD5CED00223702 /* LR35902WordAddition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LR35902WordAddition.swift; sourceTree = "<group>"; };
-		8BAB721D29FD5D1200223702 /* LR35902RegisterArithmeticResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LR35902RegisterArithmeticResult.swift; sourceTree = "<group>"; };
+		8BAB721B29FD5CED00223702 /* Word+Addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Word+Addition.swift"; sourceTree = "<group>"; };
+		8BAB721D29FD5D1200223702 /* WordArithmeticResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordArithmeticResult.swift; sourceTree = "<group>"; };
+		8BAB722029FD608800223702 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		8BAB722329FD60AC00223702 /* DoubleWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +146,8 @@
 		8B8FB7E429F9F44000D20B2E /* GBEmu */ = {
 			isa = PBXGroup;
 			children = (
-				8B8FB80E29F9F44600D20B2E /* CPU */,
 				8B8FB7E529F9F44000D20B2E /* AppDelegate.swift */,
+				8B8FB80E29F9F44600D20B2E /* CPU */,
 				8B8FB7E729F9F44100D20B2E /* Assets.xcassets */,
 				8B8FB7E929F9F44100D20B2E /* MainMenu.xib */,
 				8B8FB7EC29F9F44100D20B2E /* GBEmu.entitlements */,
@@ -177,7 +181,6 @@
 				8B35C59B29FA9D5E007CB49C /* Instruction Evaluation */,
 				8B35C59A29FA9D52007CB49C /* Instruction Set */,
 				8BAB721A29FD5CC800223702 /* Convenience */,
-				8BAB721829FD5A9300223702 /* FlagResult.swift */,
 			);
 			path = CPU;
 			sourceTree = "<group>";
@@ -193,10 +196,29 @@
 		8BAB721A29FD5CC800223702 /* Convenience */ = {
 			isa = PBXGroup;
 			children = (
-				8BAB721B29FD5CED00223702 /* LR35902WordAddition.swift */,
-				8BAB721D29FD5D1200223702 /* LR35902RegisterArithmeticResult.swift */,
+				8BAB721829FD5A9300223702 /* FlagResult.swift */,
+				8BAB721F29FD607C00223702 /* Word */,
+				8BAB722229FD609D00223702 /* DoubleWord */,
 			);
 			path = Convenience;
+			sourceTree = "<group>";
+		};
+		8BAB721F29FD607C00223702 /* Word */ = {
+			isa = PBXGroup;
+			children = (
+				8BAB722029FD608800223702 /* Word.swift */,
+				8BAB721D29FD5D1200223702 /* WordArithmeticResult.swift */,
+				8BAB721B29FD5CED00223702 /* Word+Addition.swift */,
+			);
+			path = Word;
+			sourceTree = "<group>";
+		};
+		8BAB722229FD609D00223702 /* DoubleWord */ = {
+			isa = PBXGroup;
+			children = (
+				8BAB722329FD60AC00223702 /* DoubleWord.swift */,
+			);
+			path = DoubleWord;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,14 +354,16 @@
 			files = (
 				8B35C5A129FA9EF1007CB49C /* CPUError.swift in Sources */,
 				8B8FB7E629F9F44000D20B2E /* AppDelegate.swift in Sources */,
+				8BAB722429FD60AC00223702 /* DoubleWord.swift in Sources */,
+				8BAB722129FD608800223702 /* Word.swift in Sources */,
 				8B35C5A329FA9F92007CB49C /* CPU+Evaluate.swift in Sources */,
 				8B8FB81029F9F45E00D20B2E /* CPUInstruction8Bit.swift in Sources */,
 				8B35C59929FA0B1E007CB49C /* CPUInstruction16BitDecodeFailure.swift in Sources */,
 				8B35C59F29FA9E62007CB49C /* CPUInstructionEvaluationResult.swift in Sources */,
 				8B35C59D29FA9D91007CB49C /* CPU+Control.swift in Sources */,
-				8BAB721E29FD5D1200223702 /* LR35902RegisterArithmeticResult.swift in Sources */,
+				8BAB721E29FD5D1200223702 /* WordArithmeticResult.swift in Sources */,
 				8BAB721729FD4D9000223702 /* CPU+8BitArithmetic.swift in Sources */,
-				8BAB721C29FD5CED00223702 /* LR35902WordAddition.swift in Sources */,
+				8BAB721C29FD5CED00223702 /* Word+Addition.swift in Sources */,
 				8BAB721929FD5A9300223702 /* FlagResult.swift in Sources */,
 				8B8FB81229F9F46400D20B2E /* CPU.swift in Sources */,
 				8B35C59729FA0AE7007CB49C /* CPUInstruction16Bit.swift in Sources */,
