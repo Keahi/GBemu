@@ -21,7 +21,7 @@
 		8B8FB80229F9F44100D20B2E /* GBEmuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB80129F9F44100D20B2E /* GBEmuUITestsLaunchTests.swift */; };
 		8B8FB81029F9F45E00D20B2E /* CPUInstruction8Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB80F29F9F45E00D20B2E /* CPUInstruction8Bit.swift */; };
 		8B8FB81229F9F46400D20B2E /* CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB81129F9F46400D20B2E /* CPU.swift */; };
-		8B8FB81529F9F49100D20B2E /* LR35902CPU8BitArithmeticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB81429F9F49100D20B2E /* LR35902CPU8BitArithmeticTests.swift */; };
+		8B8FB81529F9F49100D20B2E /* CPU+8BitArithmeticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB81429F9F49100D20B2E /* CPU+8BitArithmeticTests.swift */; };
 		8BAB721729FD4D9000223702 /* CPU+8BitArithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAB721629FD4D9000223702 /* CPU+8BitArithmetic.swift */; };
 		8BAB721929FD5A9300223702 /* FlagResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAB721829FD5A9300223702 /* FlagResult.swift */; };
 		8BAB721C29FD5CED00223702 /* Word+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAB721B29FD5CED00223702 /* Word+Addition.swift */; };
@@ -66,7 +66,7 @@
 		8B8FB80129F9F44100D20B2E /* GBEmuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBEmuUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8B8FB80F29F9F45E00D20B2E /* CPUInstruction8Bit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPUInstruction8Bit.swift; sourceTree = "<group>"; };
 		8B8FB81129F9F46400D20B2E /* CPU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPU.swift; sourceTree = "<group>"; };
-		8B8FB81429F9F49100D20B2E /* LR35902CPU8BitArithmeticTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LR35902CPU8BitArithmeticTests.swift; sourceTree = "<group>"; };
+		8B8FB81429F9F49100D20B2E /* CPU+8BitArithmeticTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CPU+8BitArithmeticTests.swift"; sourceTree = "<group>"; };
 		8B8FB81629F9F4B800D20B2E /* GBEmu.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = GBEmu.xctestplan; sourceTree = "<group>"; };
 		8BAB721629FD4D9000223702 /* CPU+8BitArithmetic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CPU+8BitArithmetic.swift"; sourceTree = "<group>"; };
 		8BAB721829FD5A9300223702 /* FlagResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagResult.swift; sourceTree = "<group>"; };
@@ -188,7 +188,7 @@
 		8B8FB81329F9F47A00D20B2E /* CPU */ = {
 			isa = PBXGroup;
 			children = (
-				8B8FB81429F9F49100D20B2E /* LR35902CPU8BitArithmeticTests.swift */,
+				8B8FB81429F9F49100D20B2E /* CPU+8BitArithmeticTests.swift */,
 			);
 			path = CPU;
 			sourceTree = "<group>";
@@ -375,7 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B8FB81529F9F49100D20B2E /* LR35902CPU8BitArithmeticTests.swift in Sources */,
+				8B8FB81529F9F49100D20B2E /* CPU+8BitArithmeticTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

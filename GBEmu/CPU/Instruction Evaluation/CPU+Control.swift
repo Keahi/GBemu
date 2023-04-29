@@ -1,5 +1,5 @@
 //
-//  LR35902Opcode8BitExecutors.swift
+//  CPU+Control.swift
 //  GBEmu
 //
 //  Created by Jacob Ertell on 4/27/23.

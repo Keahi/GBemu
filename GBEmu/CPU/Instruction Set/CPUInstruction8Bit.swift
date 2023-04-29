@@ -1,5 +1,5 @@
 //
-//  CPUInstruction.swift
+//  CPUInstruction8Bit.swift
 //  GBEmu
 //
 //  Created by Jacob Ertell on 4/26/23.

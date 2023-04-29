@@ -1,5 +1,5 @@
 //
-//  LR35902Arithmetic8BitExecutors.swift
+//  CPU+8BitArithmetic.swift
 //  GBEmu
 //
 //  Created by Jacob Ertell on 4/29/23.

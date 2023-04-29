@@ -1,5 +1,5 @@
 //
-//  LR35902CPU8BitArithmeticTests.swift
+//  CPU+8BitArithmeticTests.swift
 //  GBEmuTests
 //
 //  Created by Jacob Ertell on 4/26/23.
@@ -8,7 +8,7 @@
 @testable import GBEmu
 import XCTest
 
-final class LR35902CPU8BitArithmeticTests: XCTestCase {
+final class CPU_8BitArithmeticTests: XCTestCase {
     // MARK: 0x04 INC B
     func testInstruction_inc_B() throws {
         var cpu = CPU()
