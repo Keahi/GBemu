@@ -28,6 +28,8 @@
 		8BAB721E29FD5D1200223702 /* WordArithmeticResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAB721D29FD5D1200223702 /* WordArithmeticResult.swift */; };
 		8BAB722129FD608800223702 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAB722029FD608800223702 /* Word.swift */; };
 		8BAB722429FD60AC00223702 /* DoubleWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAB722329FD60AC00223702 /* DoubleWord.swift */; };
+		8BBA4DA329FD65AA00A1F68D /* WordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBA4DA229FD65A900A1F68D /* WordTests.swift */; };
+		8BBA4DA529FD663600A1F68D /* Word+AdditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBA4DA429FD663600A1F68D /* Word+AdditionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		8BAB721D29FD5D1200223702 /* WordArithmeticResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordArithmeticResult.swift; sourceTree = "<group>"; };
 		8BAB722029FD608800223702 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		8BAB722329FD60AC00223702 /* DoubleWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleWord.swift; sourceTree = "<group>"; };
+		8BBA4DA229FD65A900A1F68D /* WordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTests.swift; sourceTree = "<group>"; };
+		8BBA4DA429FD663600A1F68D /* Word+AdditionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Word+AdditionTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				8B8FB81429F9F49100D20B2E /* CPU+8BitArithmeticTests.swift */,
+				8BBA4D9E29FD658A00A1F68D /* Convenience */,
 			);
 			path = CPU;
 			sourceTree = "<group>";
@@ -219,6 +224,23 @@
 				8BAB722329FD60AC00223702 /* DoubleWord.swift */,
 			);
 			path = DoubleWord;
+			sourceTree = "<group>";
+		};
+		8BBA4D9E29FD658A00A1F68D /* Convenience */ = {
+			isa = PBXGroup;
+			children = (
+				8BBA4D9F29FD659400A1F68D /* Word */,
+			);
+			path = Convenience;
+			sourceTree = "<group>";
+		};
+		8BBA4D9F29FD659400A1F68D /* Word */ = {
+			isa = PBXGroup;
+			children = (
+				8BBA4DA229FD65A900A1F68D /* WordTests.swift */,
+				8BBA4DA429FD663600A1F68D /* Word+AdditionTests.swift */,
+			);
+			path = Word;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,6 +398,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B8FB81529F9F49100D20B2E /* CPU+8BitArithmeticTests.swift in Sources */,
+				8BBA4DA529FD663600A1F68D /* Word+AdditionTests.swift in Sources */,
+				8BBA4DA329FD65AA00A1F68D /* WordTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
