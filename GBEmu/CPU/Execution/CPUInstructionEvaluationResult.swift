@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct LR35902ExecutionResult {
+struct CPUInstructionEvaluationResult {
     let cycleCount: Int
 }
