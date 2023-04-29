@@ -12,7 +12,7 @@
 		8B35C59929FA0B1E007CB49C /* LR35902Instruction16BitDecodeFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35C59829FA0B1E007CB49C /* LR35902Instruction16BitDecodeFailure.swift */; };
 		8B35C59D29FA9D91007CB49C /* LR35902ControlInstructionExecutors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35C59C29FA9D91007CB49C /* LR35902ControlInstructionExecutors.swift */; };
 		8B35C59F29FA9E62007CB49C /* LR35902ExecutionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35C59E29FA9E62007CB49C /* LR35902ExecutionResult.swift */; };
-		8B35C5A129FA9EF1007CB49C /* LR35902ExecutionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35C5A029FA9EF1007CB49C /* LR35902ExecutionError.swift */; };
+		8B35C5A129FA9EF1007CB49C /* CPUError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35C5A029FA9EF1007CB49C /* CPUError.swift */; };
 		8B35C5A329FA9F92007CB49C /* CPU+Evaluate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35C5A229FA9F92007CB49C /* CPU+Evaluate.swift */; };
 		8B8FB7E629F9F44000D20B2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FB7E529F9F44000D20B2E /* AppDelegate.swift */; };
 		8B8FB7E829F9F44100D20B2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B8FB7E729F9F44100D20B2E /* Assets.xcassets */; };
@@ -51,7 +51,7 @@
 		8B35C59829FA0B1E007CB49C /* LR35902Instruction16BitDecodeFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LR35902Instruction16BitDecodeFailure.swift; sourceTree = "<group>"; };
 		8B35C59C29FA9D91007CB49C /* LR35902ControlInstructionExecutors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LR35902ControlInstructionExecutors.swift; sourceTree = "<group>"; };
 		8B35C59E29FA9E62007CB49C /* LR35902ExecutionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LR35902ExecutionResult.swift; sourceTree = "<group>"; };
-		8B35C5A029FA9EF1007CB49C /* LR35902ExecutionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LR35902ExecutionError.swift; sourceTree = "<group>"; };
+		8B35C5A029FA9EF1007CB49C /* CPUError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUError.swift; sourceTree = "<group>"; };
 		8B35C5A229FA9F92007CB49C /* CPU+Evaluate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CPU+Evaluate.swift"; sourceTree = "<group>"; };
 		8B8FB7E229F9F44000D20B2E /* GBEmu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBEmu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8FB7E529F9F44000D20B2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,7 +114,6 @@
 				8B35C59C29FA9D91007CB49C /* LR35902ControlInstructionExecutors.swift */,
 				8BAB721629FD4D9000223702 /* LR35902Arithmetic8BitExecutors.swift */,
 				8B35C59E29FA9E62007CB49C /* LR35902ExecutionResult.swift */,
-				8B35C5A029FA9EF1007CB49C /* LR35902ExecutionError.swift */,
 				8B35C5A229FA9F92007CB49C /* CPU+Evaluate.swift */,
 			);
 			path = Execution;
@@ -174,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				8B8FB81129F9F46400D20B2E /* CPU.swift */,
+				8B35C5A029FA9EF1007CB49C /* CPUError.swift */,
 				8B35C59B29FA9D5E007CB49C /* Execution */,
 				8B35C59A29FA9D52007CB49C /* Instruction Set */,
 				8BAB721A29FD5CC800223702 /* Convenience */,
@@ -330,7 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B35C5A129FA9EF1007CB49C /* LR35902ExecutionError.swift in Sources */,
+				8B35C5A129FA9EF1007CB49C /* CPUError.swift in Sources */,
 				8B8FB7E629F9F44000D20B2E /* AppDelegate.swift in Sources */,
 				8B35C5A329FA9F92007CB49C /* CPU+Evaluate.swift in Sources */,
 				8B8FB81029F9F45E00D20B2E /* LR35902Instruction.swift in Sources */,
